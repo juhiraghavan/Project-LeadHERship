@@ -69,12 +69,12 @@ h3{
     font-family: Poppins;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1;
     letter-spacing: -2.56px;
     width: 936px;
     margin-right: 476px;
     margin-left: 80px;
-    margin-top: 180px;
+    margin-top: 240px;
 }
 h4{
     width: 336px;
@@ -116,6 +116,20 @@ h6{
     margin-top: 80px;
     margin-bottom: 0px;
 }
+.center-heading{
+    color: #1F2937;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    width: 936px;
+    margin-top: -80px;
+    margin-bottom: 0px;
+}
+
 
 .site-title{
     color: #1F2937;
@@ -155,6 +169,10 @@ h6{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0px;
+    position: fixed;
+    z-index: 3;
+    margin-top: -110px;
+
 }
 body, html {
     margin: 0;
@@ -167,6 +185,7 @@ body, html {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 1;
+    margin-top: 110px;
 }
 
 .bottom-container-home::before {
@@ -200,6 +219,7 @@ body, html {
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
+    margin-top: 110px;
     z-index: 1;
 }
 
@@ -234,6 +254,7 @@ body, html {
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
+    margin-top: 110px;
     z-index: 1;
 }
 
@@ -271,6 +292,7 @@ body, html {
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
+    margin-top: 110px;
     z-index: 1;
 }
 
@@ -309,6 +331,7 @@ body, html {
     align-items: center;
     flex-direction: column;
     text-align: left;
+    margin-top: 110px;
     z-index: 1;
 }
 
@@ -354,8 +377,8 @@ body, html {
     height: 100%;
     background-image: url("Images/polka-dots.jpg");
     background-size: cover;
-    background-position: center -80px;
-    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: repeat-y;
     opacity: 0.2;
     z-index: -2;
 }
@@ -414,6 +437,7 @@ body, html {
     flex-direction: column;
     align-items: left;
     margin-bottom: 0px;
+    margin-top: -80px;
 }
 .button-container {
     display: flex;
@@ -469,6 +493,7 @@ textarea{
     background: #FFF;
     width: 626px;
     height: 48px;
+    margin-bottom: 16px;
 }
 .f-l-name-textbox{
     display: flex;
@@ -484,39 +509,44 @@ textarea{
     height: 48px;
     margin-bottom:0px;
 }
-.business-container{
-    width: 406px;
-    height: 312px;
-    flex-shrink: 0;
-    border-radius: 27px;
-    background: #FFC9E1;
-    margin-left: 200px;
-
+.courses-container {
+  width: 406px;
+  height: 312px;
+  border-radius: 27px;
+  background: #FFC9E1;
 }
-.life-skills-container{
-    width: 406px;
-    height: 312px;
-    flex-shrink: 0;
-    border-radius: 27px;
-    background: #FFC9E1;
-
-}
-.box-row {
-    display: flex;
-    gap: 190px;
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 406px);
+    gap: 200px;
+    justify-content: start;
     margin-top: 40px;
-    margin-left: 10px;
+    margin-left: 210px;
+    row-gap: 0px;
 }
+.center-grid {
+    display: grid;
+    place-items: center;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+.course-item {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
 .icon {
     width: 167px;
-    height: 139px;
-    flex-shrink: 0;
-    margin-left: 120px;
-    margin-top: 75px;
+    height: auto;
+    margin-top: 65px;
 }
 .course-text-container{
     display: flex;
-    gap: 270px;
+    gap: 260px;
     margin-top: 0px;
     margin-left: 240px;
     margin-bottom: 0px;
@@ -542,16 +572,16 @@ textarea{
 
 }
 .about-p{
-    width: 315px;
-    height: 446px;
+    width: 300px;
+    height: 346px;
     flex-shrink: 0;
     color: #1F2937;
     font-family: "DM Sans";
-    font-size: 15px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 65px 22px 8px 23px;
+    padding: 20px 22px 8px 35px;
 }
 .text-container{
     width: 360px;
@@ -563,16 +593,16 @@ textarea{
     transform: translate(950px,140px);
 }
 .mission-p{
-    width: 315px;
+    width: 255px;
     height: 402px;
     flex-shrink: 0;
     color: #1F2937;
     font-family: "DM Sans";
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    padding: 49px 22px 39px 23px;
+    padding: 39px 12px 39px 53px;
 }
 .text-container2{
     position: absolute;
@@ -584,16 +614,16 @@ textarea{
     transform: translate(950px,140px);
 }
 .mission-p2{
-    width: 315px;
+    width: 255px;
     height: 402px;
     flex-shrink: 0;
     color: #1F2937;
     font-family: "DM Sans";
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    padding: 19px 17px 39px 30px;
+    padding: 24px 17px 39px 50px;
 }
 .text-container3{
     position: absolute;
@@ -627,7 +657,7 @@ textarea{
 /* flowers */
 .flower-courses1{
     position: absolute;
-    transform: translate(150px, -528px);
+    transform: translate(30px, -1408px);
     width: 150px;
     height: 150px;
     flex-shrink: 0;
@@ -638,7 +668,7 @@ textarea{
 
 .flower-courses2{
     position: absolute;
-    transform: translate(600px ,-250px);
+    transform: translate(30px ,-450px);
     width: 150px;
     height: 150px;
     flex-shrink: 0;
@@ -648,7 +678,7 @@ textarea{
 
 .flower-courses3{
     position: absolute;
-    transform: translate(1140px, -532px);
+    transform: translate(1260px, -832px);
     width: 150px;
     height: 150px;
     flex-shrink: 0;
@@ -664,9 +694,27 @@ textarea{
     padding: 0;
     margin-bottom: 0;
 }
+.flower-left-2{
+    position: absolute;
+    transform: translate(-600px,-300px);
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
 .flower-right{
     position: absolute;
     transform: translate(1220px,60px);
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+.flower-right-2{
+    position: absolute;
+    transform: translate(480px,-60px);
     width: 150px;
     height: 150px;
     flex-shrink: 0;
@@ -691,3 +739,15 @@ textarea{
     padding: 0;
     margin-bottom: 0;
 }
+.name-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 36px;
+    margin-bottom: 16px;
+  }
+  
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+  

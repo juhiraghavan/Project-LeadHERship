@@ -22,13 +22,19 @@
 
   <form class = "notification-page">
       <div class = "form-text">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" class = "f-l-name-textbox"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" class = "f-l-name-textbox"><br>
-        <label for="email">Email Address:</label><br>
-        <input type="text" id="email" name="email" class = "email-textbox"><br>
-        <label for="large-text">Your Message:</label><br>
+        <div class="name-grid">
+          <div class="input-group">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" class="f-l-name-textbox">
+          </div>
+          <div class="input-group">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" class="f-l-name-textbox">
+          </div>
+        </div>
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email" class = "email-textbox">
+        <label for="large-text">Your Message:</label>
         <div class = "textarea-container"></div>
           <textarea id="large-text" name="message" rows="10" cols="50" placeholder="Enter your question or message"></textarea><br>
         </div>
