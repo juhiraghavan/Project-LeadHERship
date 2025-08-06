@@ -28,7 +28,6 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 8px;
-    margin-left: 643px;
     font-family: "DM Sans";
     margin-top: -60px;
     margin-bottom: 40px;
@@ -111,10 +110,10 @@ h6{
     font-weight: 700;
     line-height: normal;
     letter-spacing: -1.92px;
-    width: 936px;
-    margin-left: 230px;
-    margin-top: 80px;
-    margin-bottom: 0px;
+    max-width: 936px;
+    width: 936%;
+    margin: 0 auto 0 auto;
+    text-align: center;
 }
 .center-heading{
     color: #1F2937;
@@ -125,7 +124,8 @@ h6{
     font-weight: 700;
     line-height: normal;
     letter-spacing: -1.92px;
-    width: 936px;
+    max-width: 936px;
+    width: 100%;
     margin-top: -80px;
     margin-bottom: 0px;
 }
@@ -139,7 +139,6 @@ h6{
     font-weight: 400;
     line-height: 150%;
     margin-left: 80px;
-    margin-top: 0px;
 }
 
 .nav-links a {
@@ -163,14 +162,15 @@ h6{
 
 .top-container{
     background: #FFC9E1;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0px;
     position: fixed;
-    z-index: 3;
+    z-index: 7;
     margin-top: -110px;
 
 }
@@ -267,7 +267,7 @@ body, html {
     height: 100%;
     background-image: url("Images/desk.jpg");
     background-size: cover;
-    background-position: center -10px;
+    background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.5;
     z-index: -2;
@@ -305,7 +305,7 @@ body, html {
     height: 100%;
     background-image: url("Images/pink-flower.jpg");
     background-size: cover;
-    background-position: center -80px;
+    background-position: center center;
     background-repeat: no-repeat;
     opacity: 0.5;
     z-index: -2;
@@ -332,6 +332,7 @@ body, html {
     flex-direction: column;
     text-align: left;
     margin-top: 110px;
+    margin-bottom:0px;
     z-index: 1;
 }
 
@@ -360,15 +361,14 @@ body, html {
     background-color: rgba(249, 250, 251, 0.3); 
     z-index: -1;
 }
-.page2 {
+.mission-page2 {
     position: relative;
     min-height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
-    z-index: 1;
 }
 
-.page2::before {
+.mission-page2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -383,7 +383,75 @@ body, html {
     z-index: -2;
 }
 
-.page2::after {
+.mission-page2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 250, 251, 0.3); 
+    z-index: -1;
+}
+.courses-page2 {
+    position: relative;
+    padding-top: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: visible;
+    z-index: 1;
+}
+
+.courses-page2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Images/polka-dots.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.courses-page2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 250, 251, 0.3); 
+    z-index: -1;
+}
+
+.about-page2 {
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: visible;
+    z-index: 1;
+}
+
+.about-page2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Images/polka-dots.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat-y;
+    opacity: 0.2;
+    z-index: -2;
+}
+
+.about-page2::after {
     content: "";
     position: absolute;
     top: 0;
@@ -558,7 +626,7 @@ textarea{
     flex-shrink: 0;
     aspect-ratio: 701/517;
     border-radius: 27px;
-    transform: translate(115px, 124px)
+    transform: translate(115px, 124px);
 
 }
 .images2{
@@ -750,4 +818,228 @@ textarea{
     display: flex;
     flex-direction: column;
 }
+
+/* responsive design */
+@media (max-width: 834px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .course-item {
+    width: 90%;
+    height: auto;
+    padding: 24px;
+  }
+  h6{
+    display: flex;
+    margin-left:120px;
+    font-size: 80px;
+  }
+  h2{
+    font-size: 100px;
+  }
+  .site-title {
+    font-size: 16px;
+  }
+  .nav-links {
+    align-items: center;
+    margin: 0;
+    gap: 15px;
+    margin-left: 167px; 
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
+  .flower-courses1{
+    display:none;
+  }
+  .flower-courses2{
+    display:none;
+  }
+  .flower-courses3{
+    display:none;
+  }
+  .flower-left-2{
+    display:none;
+  }
+  .flower-right-2{
+    display:none;
+  }
+  h1{
+    font-size: 80px;
+  }
+  h5{
+    font-size: 20px;
+  }
+  h3{
+    font-size:100px;
+  }
+  .shadow-container{
+    width: 501px;
+    height: auto;
+    flex-shrink: 0;
+    transform: translate(145px,90px);
+  }
+  .images{
+    width: 501px;
+    height: auto;
+    transform: translate(185px, 124px)
+  }
+  .flower-left{
+    width: 120px;
+    height: auto;
+    transform: translate(90px,50px);
+  }
+  .flower-bottom-1{
+    width:120px;
+    height: auto;
+    transform: translate(630px,430px);
+  }
+  .text-container{
+    width: 501px;
+    height: auto;
+    transform: translate(185px,560px);
+  }  
+  .about-page2::before {
+    height: 140%;
+  } 
+  .about-p{
+    width: 440px;
+    height: 290px;
+    flex-shrink: 0;
+    color: #1F2937;
+    font-family: "DM Sans";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 22px auto 35px;
+  }
+    .text-container2{
+        width: 501px;
+        height: 270px;
+        background: #FFC9E1;
+        margin-left: -765px;
+        margin-top: 400px;
+        z-index: 5;
+    }
+
+    .mission-page2 {
+        overflow:visible;
+        height: 115%;
+    } 
+    .page3{
+        overflow: hidden;
+        height: 100%;
+    }
+    .mission-p{
+        width: 400px;
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    .images2{
+        width: 501px;
+        height: auto;
+        transform: translate(185px, 104px)
+    }
+    .shadow-container2{
+        width: 501px;
+        height: auto;
+        flex-shrink: 0;
+        transform: translate(145px,70px);
+    }
+    .text-container3{
+        width: 501px;
+        height: 200px;
+        background: #FFC9E1;
+        margin-left: 85px;
+        margin-top: 350px;
+        z-index: 0;
+    }
+    .mission-p2{
+        width: 400px;
+        height:10px;
+        padding-top:8px;
+        font-size: 17px;
+    }
+    .flower-bottom-2 {
+        width: 120px;
+        height: auto;
+        transform: translate(650px,400px);
+    }
+}
+/*
+@media (max-width: 512px) {
+    .course-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-left: 0;
+      justify-content: center;
+    }
   
+    .course-item {
+      width: 90%;
+      height: auto;
+      padding: 24px;
+    }
+    h6{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 80px;
+    }
+    h2{
+      font-size: 80px;
+      margin-left:100px;
+    }
+    .site-title {
+      font-size: 15px;
+      margin-left:15px;
+    }
+    .nav-links {
+      align-items: center;
+      margin: 0;
+      gap: 5px;
+      margin-left: 40px; 
+    }
+    .nav-links a {
+      font-size: 16px;
+    }
+    .flower-courses1{
+        display:none;
+    }
+    .flower-courses2{
+        display:none;
+    }
+    .flower-courses3{
+        display:none;
+    }
+    .flower-left-2{
+        display:none;
+    }
+    .flower-right-2{
+        display:none;
+    }
+    .mobile-heading-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 70px;
+        margin-left: -105px;
+        text-align: center;
+    }
+    h5{
+        font-size: 30px;
+        margin:0;
+        text-align: center;
+    }
+  }
+  */
