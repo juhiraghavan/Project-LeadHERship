@@ -971,8 +971,8 @@ textarea{
         transform: translate(650px,400px);
     }
 }
-/*
-@media (max-width: 512px) {
+
+@media (max-width: 390px) {
     .course-grid {
       grid-template-columns: 1fr;
       gap: 40px;
@@ -985,6 +985,7 @@ textarea{
       height: auto;
       padding: 24px;
     }
+    
     h6{
       display: flex;
       justify-content: center;
@@ -992,22 +993,18 @@ textarea{
       text-align: center;
       font-size: 80px;
     }
-    h2{
-      font-size: 80px;
-      margin-left:100px;
-    }
     .site-title {
-      font-size: 15px;
+      font-size: 10px;
       margin-left:15px;
     }
     .nav-links {
       align-items: center;
       margin: 0;
       gap: 5px;
-      margin-left: 40px; 
+      margin-left: 50px; 
     }
     .nav-links a {
-      font-size: 16px;
+      font-size: 10px;
     }
     .flower-courses1{
         display:none;
@@ -1026,20 +1023,117 @@ textarea{
     }
     .mobile-heading-wrapper {
         display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+        padding: 0 20px;
+        margin-top: 180px;
+      }
+    
+      h1 {
+        font-size: 54px; 
+        margin: 10px 0;
+      }
+    
+    h5 {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        width: 85%;
+    }
+    h2{
+        font-size: 65px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: -80;
+        text-align: center;
+    }
+    h3{
+        font-size: 70px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: -80;
+        text-align: center;
+    }
+    .about-page{
+        display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+    .button-home {
+        width: 121px;
+        height: auto;
+        margin: 0 auto;
+        display: block; 
+    }
+    .mission-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .courses-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .top-container{
+        width: 390px;
+    }
+    .notification-page {
+        display: flex;
+        justify-content: center;
+        padding: 80px 20px 40px;
+      }
+      
+      .form-text {
         width: 100%;
-    }
-    
-    h1 {
-        font-size: 70px;
-        margin-left: -105px;
-        text-align: center;
-    }
-    h5{
-        font-size: 30px;
-        margin:0;
-        text-align: center;
-    }
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .name-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      
+      .input-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .f-l-name-textbox,
+      .email-textbox,
+      #large-text {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+      }
+      
+      /* Submit button styling */
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+      }
+      
+      .button-submit {
+        padding: 12px 24px;
+        font-size: 16px;
+        background-color: #800020;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      
+      .button-submit:hover {
+        background-color: #a00028;
+      }
+      
   }
-  */
