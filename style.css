@@ -60,6 +60,7 @@ h2{
     margin-right: 476px;
     margin-left: 80px;
     margin-top: 260px;
+    margin-bottom: 0px;
     
 }
 h3{
@@ -73,7 +74,8 @@ h3{
     width: 936px;
     margin-right: 476px;
     margin-left: 80px;
-    margin-top: 240px;
+    margin-top: 210px;
+    margin-bottom: 0px;
 }
 h4{
     width: 336px;
@@ -97,7 +99,7 @@ h5{
     font-weight: 400;
     line-height: 150%;
     width: 1417px;
-    margin-left: 80px;
+    margin-left: 85px;
     margin-bottom: 32px;
     margin-top: 22px;
 }
@@ -872,7 +874,7 @@ textarea{
     font-size: 80px;
   }
   h5{
-    font-size: 20px;
+    font-size: 18px;
   }
   h3{
     font-size:100px;
@@ -979,7 +981,6 @@ textarea{
       margin-left: 0;
       justify-content: center;
     }
-  
     .course-item {
       width: 90%;
       height: auto;
@@ -1036,9 +1037,7 @@ textarea{
       }
     
     h5 {
-        font-size: 20px;
-        margin: 0 0 20px 0;
-        width: 85%;
+        display:none;
     }
     h2{
         font-size: 65px;
